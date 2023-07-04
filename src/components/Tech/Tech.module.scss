@@ -1,0 +1,98 @@
+.title {
+    display: flex;
+    margin-bottom: 3.2rem;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 700;
+        background-image: linear-gradient(to right, var(--gradient-color-area));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    .line {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            top: 50%;
+            left: 2rem;
+            width: 35rem;
+            height: 0.2rem;
+            background-color: hsla(0, 0%, 100%, 0.08);
+            // background-color: red;
+        }
+    }
+}
+
+.techName {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.techSectionContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.2rem;
+    border: 0.1rem solid;
+    border-color: hsla(0, 0%, 100%, 0.08);
+    background-color: rgba(38, 38, 38, 0.1);
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    margin-right: 1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+.iconTitle {
+    span {
+        font-size: 1.6rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        color: rgb(229 231 235);
+    }
+}
+
+@media (min-width: 1280px) {
+    .techName {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .techName {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 739px) {
+    .techName {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.2rem;
+    }
+    .title {
+        .line:before {
+            width: calc(100% - 1.2rem);
+        }
+    }
+}
+
+@media (max-width: 539px) {
+    .iconTitle {
+        display: none;
+    }
+    .techSectionContainer {
+        justify-content: center;
+    }
+}
