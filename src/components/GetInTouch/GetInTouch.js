@@ -26,8 +26,12 @@ function GetInTouch() {
                         </div>
                         <a href = "mailto: thihoaian.le21@gmail.com" className={cx('mailToLink')}><span >thihoaian.le21@gmail.com</span></a>
                     </div>
-                    <div className={cx('linkedIcons')}>
-                        <a href='https://github.com/AnLe12'><GithubIcon className={cx('linkedIcon')} /></a>
+                    <div className={cx('infoGithub')}>
+                        <div className={cx('linkIcon')}>
+                            <GithubIcon className={cx('icon')} />
+                        </div>
+                        <a href = "https://github.com/AnLe12" className={cx('githubLink')}><span >https://github.com/AnLe12</span></a>
+
                     </div>
                 </div>
             </div>

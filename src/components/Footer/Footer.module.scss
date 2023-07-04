@@ -58,9 +58,9 @@
 }
 
 .links {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 9.6rem;
+    margin: auto;
+    margin-left: 50%;;
+    padding-right: 2rem;
     ul {
         list-style: none;
         li {
@@ -143,5 +143,8 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 4rem;
+    }
+    .links{
+        margin: auto;
     }
 }

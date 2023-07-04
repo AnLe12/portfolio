@@ -55,11 +55,11 @@
     }
 }
 
-.infoEmail {
+.infoEmail, .infoGithub {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
-    .emailIcon {
+    .emailIcon, .linkIcon {
         width: 3.6rem;
         height: 3.6rem;
         background-color: hsla(0, 0%, 100%, 0.08);
@@ -72,12 +72,16 @@
             color: rgb(156 163 175);
         }
     }
-    .mailToLink{
+    .mailToLink, .githubLink{
         text-decoration: none; 
+        &:hover{
+            text-decoration: underline;
+            color: rgb(156 163 175);
+        }
     }
 }
 
-.infoEmail {
+.infoEmail, .infoGithub {
     span {
         font-size: 1.4rem;
         color: rgb(156 163 175);
